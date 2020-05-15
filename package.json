@@ -11,12 +11,17 @@
   "author": "Lisa Han",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "pg": "^7.18.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
     "style-loader": "^1.1.3"
   },
   "devDependencies": {

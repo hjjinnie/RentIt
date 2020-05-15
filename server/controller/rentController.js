@@ -8,6 +8,8 @@ const pg = require('pg');
 const conString = "postgres://nalflrci:zHF3c2rUkZTXNubs_3fmoIlOfF_fOyB2@drona.db.elephantsql.com:5432/nalflrci" //Can be found in the Details page
 
 
+
+
 //access username and password in url string via req.query
 rentController.getProducts = async (req, res, next) => {
     console.log(req)

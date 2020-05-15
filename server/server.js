@@ -3,8 +3,13 @@ const app = express();
 const path = require('path');
 const api = require('./routes/api');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
 
-app.use(cors());
+app.use(cors({credentials: true, origin: 'http://localhost:8080'}));
+app.use(express.json())
+//cookieParser before app.use('/')
+app.use(cookieParser());
+
 app.use('/',api);
 
 // statically serve everything in the build folder on the route '/build'
